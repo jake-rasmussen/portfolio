@@ -1,6 +1,7 @@
 import { IconMail, IconMapPin, IconPhone } from "@tabler/icons-react";
 import { useState } from "react";
 import { toast, Toaster } from "react-hot-toast";
+import { api } from "~/utils/api";
 
 type ContactFormData = {
   name: string;
@@ -15,10 +16,39 @@ const Contact = () => {
     email: "",
     message: ""
   });
+  const formIsEmpty = () => {
+    return (!formData.name || !formData.email || !formData.message);
+  }
+
   const [loading, setLoading] = useState(false);
 
+  const email = api.nodemailer.sendEmail.useMutation({
+    onMutate() {
+      toast.loading("Sending Form...");
+      setLoading(true);
+    },
+    onSuccess() {
+      toast.dismiss();
+      toast.success("Successfully Submitted Form!");
+      setLoading(false);
+    },
+    onError() {
+      toast.dismiss();
+      toast.error("Error Submitting Form...");
+      setLoading(false);
+    }
+  });
+
   const handleSubmit = () => {
-    
+    if (formIsEmpty()) {
+      return;
+    }
+
+    email.mutate({
+      name: formData.name,
+      email: formData.email,
+      message: formData.message
+    });
   }
 
   return (
@@ -84,7 +114,12 @@ const Contact = () => {
           </label>
           <button 
             className="btn btn-outline hover:bg-[#FF6000] hover:border-none hover:animate-pulse transition-all ease-in-out duration-75"
-            onClick={handleSubmit}
+            onClick={(e) => {
+              handleSubmit();
+              if (!formIsEmpty) {
+                e.preventDefault();
+              }
+            }}
             disabled={loading}
           >
             Submit
