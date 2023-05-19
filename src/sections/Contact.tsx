@@ -31,6 +31,11 @@ const Contact = () => {
       toast.dismiss();
       toast.success("Successfully Submitted Form!");
       setLoading(false);
+      setFormData({
+        name: "",
+        email: "",
+        message: ""
+      });
     },
     onError() {
       toast.dismiss();
