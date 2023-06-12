@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const SocialsMenu = () => {
 
   return (
-    <ul className="py-8 px-2 bg-white rounded-box fixed top-[35%] right-0 mr-4 z-0 shadow-xl items-center invisible xl:visible">
+    <ul className="py-8 px-2 bg-white rounded-box fixed top-[25%] left-0 m-4 z-0 shadow-xl items-center invisible xl:visible">
       <li className="w-full text-center pt-2 text-[#2C3542] font-semibold">
         My Socials
       </li>

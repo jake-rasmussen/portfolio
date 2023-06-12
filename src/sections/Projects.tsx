@@ -28,12 +28,12 @@ const Projects = () => {
     <section className="overflow-x-hidden bg-[#2C3542] text-white">
       <div className="container mx-auto max-w-2xl space-y-24 p-6 pt-20 pb-28 lg:max-w-7xl lg:px-4">
         <div>
-          <h1 className="font-baloo bg-gradient-to-br from-[#FF6000] to-[#FFA559] bg-clip-text p-2 text-center text-7xl font-extrabold tracking-tighter text-transparent">
+          <h1 className="font-raleway bg-gradient-to-br from-[#FF6000] to-[#FFA559] bg-clip-text p-2 text-center text-7xl font-extrabold tracking-narrow text-transparent">
             My Projects
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-center text-2xl">
             I love to code, and have taken on a wide range of projects over the
-            years
+            years.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ const Projects = () => {
               </h3>
               <p className="mt-3 text-xl">
                 I am currently working with a partner to develop a website for a
-                travel baseball organization based out of Philadelphia
+                travel baseball organization based out of Philadelphia.
               </p>
               <div className="mt-12 space-y-12">
                 <div className="flex">
@@ -129,7 +129,7 @@ const Projects = () => {
               <p className="mt-3 text-xl">
                 Developed the mobile version of the ridesharing app, Split.it.
                 Worked collaboratively with a team of 8 fellow Johns Hopkins
-                students
+                students.
               </p>
               <div className="mt-12 space-y-12">
                 <div className="flex">
@@ -219,7 +219,7 @@ const Projects = () => {
               <p className="mt-3 text-xl">
                 I worked on a Johns Hopkins research project tasked with
                 simulating infectious diseases and various mandates to try to
-                reduce transmission
+                reduce transmission.
               </p>
               <div className="mt-12 space-y-12">
                 <div className="flex">

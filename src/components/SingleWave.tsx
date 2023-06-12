@@ -6,12 +6,12 @@ const Wave = () => {
       fill="#FFFFFF"
       paused={false}
       options={{
-        height: 12,
-        amplitude: 12,
+        height: 20,
+        amplitude: 20,
         speed: 0.2,
         points: 4,
       }}
-      className="z-0 m-0 h-12 scale-y-[1.3] p-0"
+      className="z-0 m-0 h-24 scale-y-[1.3] p-0"
     />
   );
 };

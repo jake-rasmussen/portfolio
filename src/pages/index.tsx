@@ -7,10 +7,10 @@ import Footer from "../sections/Footer";
 import Contact from "../sections/Contact";
 import SingleWave from "../components/SingleWave";
 import SocialsMenu from "~/components/SocialsMenu";
-import Homepage from "~/sections/Homepage";
 import AboutMe from "~/sections/AboutMe";
 
 import { motion } from "framer-motion";
+import Hero from "~/sections/Hero";
 
 const Home: NextPage = () => {
   return (
@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
   
-      <Homepage />
+      <Hero />
 
       <section>
         <div className="relative">

@@ -7,7 +7,8 @@ export default {
   theme: {
     fontFamily: {
       baloo: ["var(--font-baloo)", ...fontFamily.sans],
-      montserrat: ["var(--font-montserrat)", ...fontFamily.sans]
+      montserrat: ["var(--font-montserrat)", ...fontFamily.sans],
+      raleway: ["var(--font-raleway)", ...fontFamily.sans]
     }
   },
   plugins: [require("daisyui")],
