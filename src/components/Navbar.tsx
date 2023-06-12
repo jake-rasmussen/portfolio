@@ -1,20 +1,24 @@
 const Navbar = () => {
-
   return (
-    <div className="navbar bg-white fixed z-10 shadow-2xl">
+    <div className="navbar fixed z-10 bg-white shadow-2xl">
       <div className="flex-1">
-        <a className="btn btn-ghost normal-case text-xl">Jake Rasmussen</a>
+        <a className="btn-ghost btn text-xl normal-case">Jake Rasmussen</a>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>Projects</a></li>
-          <li><a>Contact</a></li>
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a>Projects</a>
+          </li>
+          <li>
+            <a>Contact</a>
+          </li>
         </ul>
       </div>
     </div>
-  )
-
-}
+  );
+};
 
 export default Navbar;

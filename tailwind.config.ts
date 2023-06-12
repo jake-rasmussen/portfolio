@@ -1,10 +1,13 @@
 import { type Config } from "tailwindcss";
 
+const { fontFamily } = require("tailwindcss/defaultTheme");
+
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      sans: ['Helvetica']
+      baloo: ["var(--font-baloo)", ...fontFamily.sans],
+      montserrat: ["var(--font-montserrat)", ...fontFamily.sans]
     }
   },
   plugins: [require("daisyui")],

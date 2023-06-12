@@ -1,23 +1,40 @@
-import Wavify from 'react-wavify';
+import Wavify from "react-wavify";
 
 const Wave = () => {
-
   return (
     <div className="relative">
       <Wavify
         fill="url(#gradient)"
         paused={false}
         options={{
-          height: 60,
-          amplitude: 50,
-          speed: 0.20,
+          height: 40,
+          amplitude: 70,
+          speed: 0.2,
           points: 4,
         }}
-        className="absolute bottom-0 z-1 m-0 p-0 h-60 opacity-[50%]"
+        className="z-1 absolute bottom-0 m-0 h-[17.5rem] md:h-[22.5rem] p-0 opacity-[50%]"
       >
         <defs>
           <linearGradient id="gradient" gradientTransform="rotate(70)">
-            <stop offset="10%"  stopColor="#FF6000" />
+            <stop offset="10%" stopColor="#FF6000" />
+            <stop offset="90%" stopColor="#FFA559" />
+          </linearGradient>
+        </defs>
+      </Wavify>
+      <Wavify
+        fill="url(#gradient)"
+        paused={false}
+        options={{
+          height: 60,
+          amplitude: 80,
+          speed: 0.2,
+          points: 4,
+        }}
+        className="z-1 absolute bottom-0 m-0 h-[13.5rem] md:h-[18.5rem] p-0 opacity-[50%]"
+      >
+        <defs>
+          <linearGradient id="gradient" gradientTransform="rotate(70)">
+            <stop offset="10%" stopColor="#FF6000" />
             <stop offset="90%" stopColor="#FFA559" />
           </linearGradient>
         </defs>
@@ -28,14 +45,13 @@ const Wave = () => {
         options={{
           height: 50,
           amplitude: 30,
-          speed: 0.20,
+          speed: 0.2,
           points: 4,
         }}
-        className="absolute bottom-0 z-0 m-0 p-0 h-30 scale-y-[1.1]"
+        className="absolute bottom-0 z-0 m-0 h-[8rem] md:h-[10rem] scale-y-[1.1] p-0"
       />
     </div>
-  )
-
-}
+  );
+};
 
 export default Wave;
