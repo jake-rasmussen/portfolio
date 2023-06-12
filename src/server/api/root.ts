@@ -8,7 +8,7 @@ import { nodemailerRouter } from "./routers/email";
  */
 export const appRouter = createTRPCRouter({
   example: exampleRouter,
-  nodemailer: nodemailerRouter
+  nodemailer: nodemailerRouter,
 });
 
 // export type definition of API

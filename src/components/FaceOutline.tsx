@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
 
 const FaceOutline = () => {
-
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex items-center justify-center">
       <motion.svg
         viewBox="50 40 900 900"
-        className="top-0 w-auto lg:h-[25rem] md:h-[20rem] h-[17.5rem] left-1/2 -translate-x-2/3 translate-x-0 z-10"
+        className="left-1/2 top-0 z-10 h-[17.5rem] w-auto -translate-x-2/3 translate-x-0 md:h-[20rem] lg:h-[25rem]"
         stroke="white"
         fill="none"
         strokeWidth={15}
@@ -18,14 +17,14 @@ const FaceOutline = () => {
           strokeLinecap="round"
           transition={{
             delay: 2,
-            duration: 2.5, 
+            duration: 2.5,
             ease: "easeInOut",
           }}
           className="z-10"
         />
         <motion.svg
           viewBox="0 0 900 900"
-          className="top-0 w-auto lg:h-[25rem] md:h-[20rem] h-[17.5rem] left-1/2 -translate-x-2/3 translate-x-0"
+          className="left-1/2 top-0 h-[17.5rem] w-auto -translate-x-2/3 translate-x-0 md:h-[20rem] lg:h-[25rem]"
           stroke="#FF6600"
           fill="none"
           strokeWidth={25}
@@ -36,16 +35,14 @@ const FaceOutline = () => {
             initial={{ pathLength: 0 }}
             transition={{
               delay: 1.5,
-              duration: 1, 
+              duration: 1,
               ease: "easeInOut",
             }}
           />
         </motion.svg>
       </motion.svg>
-      
     </div>
-  )
-
-}
+  );
+};
 
 export default FaceOutline;

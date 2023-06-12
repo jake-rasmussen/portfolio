@@ -14,13 +14,13 @@ import Hero from "~/sections/Hero";
 
 const Home: NextPage = () => {
   return (
-    <main className="font-montserrat bg-[#2C3542]">
+    <main className="bg-[#2C3542] font-montserrat">
       <Head>
         <title>Jake Rasmussen</title>
         <meta name="description" content="Jake Rasmussen Portfolio Site" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-  
+
       <Hero />
 
       <section>
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
           visible: { scaleX: 1 },
           hidden: { scaleX: 0 },
         }}
-        className="bg-white h-1 mx-4 md:mx-20" 
+        className="mx-4 h-1 bg-white md:mx-20"
       />
       <Projects />
 
@@ -61,7 +61,6 @@ const Home: NextPage = () => {
 
       <SocialsMenu />
       <Footer />
-      
     </main>
   );
 };

@@ -4,7 +4,7 @@ const Wave = () => {
   return (
     <>
       {/* FOR DESKTOP */}
-      <div className="invisible md:visible relative">
+      <div className="invisible relative md:visible">
         <Wavify
           fill="url(#gradient)"
           paused={false}
@@ -14,7 +14,7 @@ const Wave = () => {
             speed: 0.2,
             points: 4,
           }}
-          className="absolute bottom-0 m-0 h-[17.5rem] md:h-[22.5rem] p-0 opacity-[50%]"
+          className="absolute bottom-0 m-0 h-[17.5rem] p-0 opacity-[50%] md:h-[22.5rem]"
         >
           <defs>
             <linearGradient id="gradient" gradientTransform="rotate(70)">
@@ -32,7 +32,7 @@ const Wave = () => {
             speed: 0.2,
             points: 4,
           }}
-          className=" absolute bottom-0 m-0 h-[13.5rem] md:h-[18.5rem] p-0 opacity-[50%]"
+          className=" absolute bottom-0 m-0 h-[13.5rem] p-0 opacity-[50%] md:h-[18.5rem]"
         >
           <defs>
             <linearGradient id="gradient" gradientTransform="rotate(70)">
@@ -50,12 +50,12 @@ const Wave = () => {
             speed: 0.2,
             points: 4,
           }}
-          className="absolute bottom-0 z-0 m-0 h-[8rem] md:h-[10rem] scale-y-[1.1] p-0"
+          className="absolute bottom-0 z-0 m-0 h-[8rem] scale-y-[1.1] p-0 md:h-[10rem]"
         />
       </div>
 
       {/* FOR MOBILE */}
-      <div className="visible md:invisible relative">
+      <div className="visible relative md:invisible">
         <Wavify
           fill="url(#gradient)"
           paused={false}
@@ -65,7 +65,7 @@ const Wave = () => {
             speed: 0.2,
             points: 2,
           }}
-          className="absolute bottom-0 m-0 h-[17.5rem] md:h-[22.5rem] p-0 opacity-[50%]"
+          className="absolute bottom-0 m-0 h-[17.5rem] p-0 opacity-[50%] md:h-[22.5rem]"
         >
           <defs>
             <linearGradient id="gradient" gradientTransform="rotate(70)">
@@ -83,7 +83,7 @@ const Wave = () => {
             speed: 0.2,
             points: 2,
           }}
-          className=" absolute bottom-0 m-0 h-[13.5rem] md:h-[18.5rem] p-0 opacity-[50%]"
+          className=" absolute bottom-0 m-0 h-[13.5rem] p-0 opacity-[50%] md:h-[18.5rem]"
         >
           <defs>
             <linearGradient id="gradient" gradientTransform="rotate(70)">
@@ -101,7 +101,7 @@ const Wave = () => {
             speed: 0.2,
             points: 4,
           }}
-          className="absolute bottom-0 z-0 m-0 h-[8rem] md:h-[10rem] scale-y-[1.1] p-0"
+          className="absolute bottom-0 z-0 m-0 h-[8rem] scale-y-[1.1] p-0 md:h-[10rem]"
         />
       </div>
     </>

@@ -23,7 +23,9 @@ const raleway = Raleway({
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <main className={`${baloo.variable} ${montserrat.variable} ${raleway.variable}`}>
+    <main
+      className={`${baloo.variable} ${montserrat.variable} ${raleway.variable}`}
+    >
       <Component {...pageProps} />
     </main>
   );

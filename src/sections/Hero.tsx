@@ -1,15 +1,14 @@
 import { motion } from "framer-motion";
 import FaceOutline from "~/components/FaceOutline";
+
 const Hero = () => {
-
   return (
-
-    <main className="flex p-0 m-0 h-screen pb-[20rem] pt-[5rem] w-screen">
-      <div className="flex flex-col md:flex-row-reverse items-center justify-center w-full">
+    <main className="m-0 flex h-screen w-screen p-0 pb-[20rem] pt-[5rem]">
+      <div className="flex w-full flex-col items-center justify-center md:flex-row-reverse">
         <FaceOutline />
-        <div className="flex flex-col items-right">
+        <div className="items-right flex flex-col">
           <motion.div
-            className="bg-gradient-to-br from-[#FF6000] to-[#FFA559] bg-clip-text text-center pb-8"
+            className="bg-gradient-to-br from-[#FF6000] to-[#FFA559] bg-clip-text pb-8 text-center"
             initial="hidden"
             whileInView="visible"
             animate={{ opacity: 1, scale: 1 }}
@@ -23,9 +22,10 @@ const Hero = () => {
               hidden: { opacity: 0, scale: 0.5 },
             }}
           >
-            <span className="font-raleway text-5xl md:text-6xl font-extrabold tracking-narrow text-transparent lg:text-7xl xl:text-[5rem] ">Jake Rasmussen</span>
+            <span className="tracking-narrow font-raleway text-5xl font-extrabold text-transparent md:text-6xl lg:text-7xl xl:text-[5rem] ">
+              Jake Rasmussen
+            </span>
           </motion.div>
-
 
           <div className="flex flex-col items-center justify-center px-4">
             <motion.div
@@ -63,7 +63,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
     </main>
   );
 };

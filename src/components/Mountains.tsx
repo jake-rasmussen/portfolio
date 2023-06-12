@@ -3,7 +3,6 @@ import Wavify from "react-wavify";
 const Wave = () => {
   return (
     <div className="relative">
-
       <Wavify
         fill="#013b49"
         paused={false}
@@ -13,7 +12,7 @@ const Wave = () => {
           speed: 0.2,
           points: 4,
         }}
-        className="z-50 absolute bottom-0 m-0 h-[10rem] p-0"
+        className="absolute bottom-0 z-50 m-0 h-[10rem] p-0"
       />
 
       <Wavify
@@ -25,7 +24,7 @@ const Wave = () => {
           speed: 0.2,
           points: 4,
         }}
-        className="z-40 absolute bottom-[-2rem] m-0 h-[20rem] p-0 rotate-[-5deg] scale-x-125"
+        className="absolute bottom-[-2rem] z-40 m-0 h-[20rem] rotate-[-5deg] scale-x-125 p-0"
       />
 
       <Wavify
@@ -37,7 +36,7 @@ const Wave = () => {
           speed: 0.2,
           points: 4,
         }}
-        className="z-30 absolute bottom-0 m-0 h-[30rem] p-0"
+        className="absolute bottom-0 z-30 m-0 h-[30rem] p-0"
       />
 
       <Wavify
@@ -49,7 +48,7 @@ const Wave = () => {
           speed: 0.2,
           points: 4,
         }}
-        className="z-20 absolute bottom-0 m-0 h-[45rem] p-0 rotate-[5deg] scale-x-125"
+        className="absolute bottom-0 z-20 m-0 h-[45rem] rotate-[5deg] scale-x-125 p-0"
       />
 
       {/* 

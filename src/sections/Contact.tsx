@@ -60,8 +60,8 @@ const Contact = () => {
       <Toaster />
       <div className="mx-auto grid max-w-6xl grid-cols-1 px-6 md:grid-cols-2 md:divide-x lg:px-8">
         <div className="py-6 md:px-6 md:py-0">
-          <h1 className="font-raleway bg-gradient-to-br from-[#FF6000] to-[#FFA559] bg-clip-text text-5xl font-extrabold tracking-narrow text-transparent">
-            Let's Get In Touch!
+          <h1 className="tracking-narrow bg-gradient-to-br from-[#FF6000] to-[#FFA559] bg-clip-text font-raleway text-5xl font-extrabold text-transparent">
+            Let&apos;s Get In Touch!
           </h1>
           <p className="pb-4 pt-2">
             Feel free to reach out and I will get back to you!

@@ -1,15 +1,13 @@
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
-import { motion } from "framer-motion";
 
 const SocialsMenu = () => {
-
   return (
-    <ul className="py-8 px-2 bg-white rounded-box fixed top-[25%] left-0 m-4 z-0 shadow-xl items-center invisible xl:visible">
-      <li className="w-full text-center pt-2 text-[#2C3542] font-semibold">
+    <ul className="rounded-box invisible fixed left-0 top-[25%] z-0 m-4 items-center bg-white px-2 py-8 shadow-xl xl:visible">
+      <li className="w-full pt-2 text-center font-semibold text-[#2C3542]">
         My Socials
       </li>
       <li>
-        <div className="divider before:bg-[#FFE6C7] after:bg-[#FFE6C7] p-0 m-0"></div>
+        <div className="divider m-0 p-0 before:bg-[#FFE6C7] after:bg-[#FFE6C7]"></div>
       </li>
       <li>
         <button
@@ -30,8 +28,7 @@ const SocialsMenu = () => {
         </button>
       </li>
     </ul>
-  )
-
-}
+  );
+};
 
 export default SocialsMenu;

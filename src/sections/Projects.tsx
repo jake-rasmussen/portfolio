@@ -26,9 +26,9 @@ const Projects = () => {
 
   return (
     <section className="overflow-x-hidden bg-[#2C3542] text-white">
-      <div className="container mx-auto max-w-2xl space-y-24 p-6 pt-20 pb-28 lg:max-w-7xl lg:px-4">
+      <div className="container mx-auto max-w-2xl space-y-24 p-6 pb-28 pt-20 lg:max-w-7xl lg:px-4">
         <div>
-          <h1 className="font-raleway bg-gradient-to-br from-[#FF6000] to-[#FFA559] bg-clip-text p-2 text-center text-7xl font-extrabold tracking-narrow text-transparent">
+          <h1 className="tracking-narrow bg-gradient-to-br from-[#FF6000] to-[#FFA559] bg-clip-text p-2 text-center font-raleway text-7xl font-extrabold text-transparent">
             My Projects
           </h1>
           <p className="mx-auto mt-4 max-w-3xl text-center text-2xl">
@@ -64,7 +64,7 @@ const Projects = () => {
                       TailwindCSS with React and Typescript
                     </h4>
                     <p className="mt-2">
-                      I've gained proficiency with using a combination of
+                      I&apos;ve gained proficiency with using a combination of
                       TailwindCSS with React and Typescript to create stylized
                       components and pages
                     </p>
@@ -81,8 +81,8 @@ const Projects = () => {
                       Comfortability with NextJS
                     </h4>
                     <p className="mt-2">
-                      Our website is built upon NextJS to increase the site's
-                      SEO, and help better the website's efficiency as a whole
+                      Our website is built upon NextJS to increase the site&apos;s
+                      SEO, and help better the website&apos;s efficiency as a whole
                     </p>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ const Projects = () => {
                       Managing Databases with tRPC
                     </h4>
                     <p className="mt-2">
-                      Throughout the project, I've gained experience with
+                      Throughout the project, I&apos;ve gained experience with
                       managing a PostGres database by using tRPC to build out
                       the API
                     </p>
@@ -143,7 +143,7 @@ const Projects = () => {
                       Gained Proficiency with Swift and Xcode
                     </h4>
                     <p className="mt-2">
-                      Throughout the project, I've solidifed my Swift skills,
+                      Throughout the project, I&apos;ve solidifed my Swift skills,
                       and gained comfortability working in the Xcode IDE
                     </p>
                   </div>

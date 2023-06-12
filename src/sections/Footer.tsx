@@ -5,7 +5,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="relative flex flex-col items-center justify-center bg-[#2C3542] py-10 text-center">
-      <div className="flex justify-center block xl:hidden">
+      <div className="block flex justify-center xl:hidden">
         <button
           className="text-[#FF6000] transition duration-300 ease-in-out hover:scale-[150%] hover:text-[#FFA559]"
           onClick={() => (location.href = "https://github.com/jake-rasmussen")}

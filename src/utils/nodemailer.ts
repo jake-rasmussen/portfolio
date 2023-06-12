@@ -25,6 +25,6 @@ export const emailForm = async (
     from: email,
     to: process.env.EMAIL_USER_ADDRESS,
     subject: `Email sent from ${name}`,
-    text: message
+    text: message,
   });
-}
+};
