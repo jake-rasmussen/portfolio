@@ -24,7 +24,7 @@ const AboutMe = () => {
               <div className="absolute h-[20rem] md:h-[25rem] w-[20rem] md:w-[15rem] lg:w-[25rem] rounded-3xl shadow-xl ring ring-[#FFA559] ring-offset-4 ring-offset-base-100 animate-pulse" />
             </div>
             <div>
-              <p className="m-8 text-left text-base lg:text-[1.1rem] text-white xl:text-xl xl:ml-10">
+              <p className="my-8 text-left text-base lg:text-[1.1rem] text-white xl:text-xl xl:ml-10">
                 I&apos;m from a small town right outside of Philadelphia, and now am in
                 Baltimore studying Computer Science at Johns Hopkins University.
                 From a very young age, I&apos;ve always had a fascination with
