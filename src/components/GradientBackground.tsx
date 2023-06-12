@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const GradientBackground: React.FC = () => {
   return (
     <motion.div
-      className="fixed top-0 left-0 w-screen h-screen z-[-10]"
+      className="fixed top-0 left-0 w-screen h-screen scale-y-125 z-[-10]"
       style={{
         background: 'linear-gradient(45deg, #0D151E, #3E4B5B)',
       }}
