@@ -5,35 +5,27 @@ const AboutMe = () => {
   return (
     <>
       <div className="flex justify-center space-y-24 p-6 pb-16 pt-[20rem] md:pt-[27.5rem]">
-        <div className="lg:mx-24">
+        <div className="mx-4 xl:mx-24">
           <h1 className="tracking-narrow bg-gradient-to-br from-[#FF6000] to-[#FFA559] bg-clip-text p-2 text-center font-raleway text-7xl font-extrabold text-transparent">
             About Me
           </h1>
-          <div className="content flex flex-col items-center">
-            <div className="avatar float-left my-4 mr-6 flex md:hidden xl:my-0">
-              <div className="h-[20rem] w-[20rem] rounded-3xl shadow-xl lg:h-[25rem] lg:w-[25rem]">
+          <p className="mx-auto mt-4 mb-10 text-center text-2xl text-white">
+            Thanks for checking out my <span className="whitespace-nowrap">portfolio site!</span>
+          </p>
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="avatar my-4 mr-6 xl:my-0">
+              <div className="h-[20rem] md:h-[25rem] w-[20rem] md:w-[15rem] lg:w-[25rem] rounded-3xl shadow-xl">
                 <Image
                   src={Headshot}
                   alt={""}
-                  className="scale-105 rounded-lg border-2 shadow-2xl"
+                  className="rounded-xl shadow-2xl h-full object-cover"
                 />
               </div>
-              <div className="absolute h-[20rem] w-[20rem] rounded-3xl shadow-xl ring ring-[#FFA559] ring-offset-4 ring-offset-base-100 lg:h-[25rem] lg:w-[25rem]" />
+              <div className="absolute h-[20rem] md:h-[25rem] w-[20rem] md:w-[15rem] lg:w-[25rem] rounded-3xl shadow-xl ring ring-[#FFA559] ring-offset-4 ring-offset-base-100 animate-pulse" />
             </div>
             <div>
-              <div className="avatar float-left mr-6 mt-8 hidden md:flex">
-                <div className="h-[20rem] w-[20rem] rounded-3xl shadow-xl lg:h-[25rem] lg:w-[25rem]">
-                  <Image
-                    src={Headshot}
-                    alt={""}
-                    className="scale-105 rounded-lg border-2 shadow-2xl"
-                  />
-                </div>
-                <div className="absolute h-[20rem] w-[20rem] rounded-3xl shadow-xl ring ring-[#FFA559] ring-offset-4 ring-offset-base-100 lg:h-[25rem] lg:w-[25rem]" />
-              </div>
-              <p className="m-8 text-left text-left text-xl text-white lg:text-2xl xl:ml-10">
-                Thank you for checking out my portfolio website! I&apos;m from a
-                small town right outside of Philadelphia, and now am in
+              <p className="m-8 text-left text-base lg:text-[1.1rem] text-white xl:text-xl xl:ml-10">
+                I&apos;m from a small town right outside of Philadelphia, and now am in
                 Baltimore studying Computer Science at Johns Hopkins University.
                 From a very young age, I&apos;ve always had a fascination with
                 technology. I loved playing around with the Raspberry Pi, and I

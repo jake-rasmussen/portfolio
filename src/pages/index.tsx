@@ -11,15 +11,18 @@ import AboutMe from "~/sections/AboutMe";
 
 import { motion } from "framer-motion";
 import Hero from "~/sections/Hero";
+import GradientBackground from "~/components/GradientBackground";
 
 const Home: NextPage = () => {
   return (
-    <main className="bg-[#2C3542] font-montserrat">
+    <main className="font-montserrat">
       <Head>
         <title>Jake Rasmussen</title>
         <meta name="description" content="Jake Rasmussen Portfolio Site" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <GradientBackground />
 
       <Hero />
 
@@ -60,7 +63,9 @@ const Home: NextPage = () => {
       </div>
 
       <SocialsMenu />
+
       <Footer />
+      
     </main>
   );
 };

@@ -25,15 +25,14 @@ const Projects = () => {
   const [ref3, inView3] = useInView({ threshold: 0.45 });
 
   return (
-    <section className="overflow-x-hidden bg-[#2C3542] text-white">
+    <section className="overflow-x-hidden text-white">
       <div className="container mx-auto max-w-2xl space-y-24 p-6 pb-28 pt-20 lg:max-w-7xl lg:px-4">
         <div>
           <h1 className="tracking-narrow bg-gradient-to-br from-[#FF6000] to-[#FFA559] bg-clip-text p-2 text-center font-raleway text-7xl font-extrabold text-transparent">
             My Projects
           </h1>
-          <p className="mx-auto mt-4 max-w-3xl text-center text-2xl">
-            I love to code, and have taken on a wide range of projects over the
-            years.
+          <p className="mx-auto mt-4 text-center text-2xl">
+            I love to code, and have taken on a wide range of <span className="whitespace-nowrap">projects over the years.</span>
           </p>
         </div>
 

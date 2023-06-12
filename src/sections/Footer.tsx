@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="relative flex flex-col items-center justify-center bg-[#2C3542] py-10 text-center">
+    <footer className="relative flex flex-col items-center justify-center py-10 text-center">
       <div className="block flex justify-center xl:hidden">
         <button
           className="text-[#FF6000] transition duration-300 ease-in-out hover:scale-[150%] hover:text-[#FFA559]"
