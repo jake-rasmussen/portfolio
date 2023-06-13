@@ -25,7 +25,7 @@ export const nodemailerRouter = createTRPCRouter({
           await emailForm(name, email, message);
         } catch (e) {
           throw new TRPCError({
-            message: `${e}`,
+            message: "INTERNAL_SERVER_ERROR",
             code: "INTERNAL_SERVER_ERROR",
           });
         }

@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
+import { google } from "googleapis";
 
-const { google } = require("googleapis");
 const OAuth2 = google.auth.OAuth2;
 
 const createTransporter = async () => {
@@ -14,23 +14,16 @@ const createTransporter = async () => {
     refresh_token: process.env.EMAIL_REFRESH_TOKEN
   });
 
-  const getAccessToken = () => {
-    try {
-      const token: string = oauth2Client.getAccessToken();
-      return token;
-    } catch (e) {
-      console.log(e);
-      throw("INTERNAL_SERVER_ERROR");
-    }
-    
-  };
+  const accessToken = await new Promise((resolve) => {
+    oauth2Client.getAccessToken((token) => resolve(token));
+  });
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
       type: "OAuth2",
       user: process.env.EMAIL_USER_ADDRESS,
-      accessToken: getAccessToken(),
+      accessToken: accessToken as string,
       clientId: process.env.EMAIL_CLIENT_ID,
       clientSecret: process.env.EMAIL_CLIENT_SECRET,
       refreshToken: process.env.EMAIL_REFRESH_TOKEN,
