@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const AboutMe = () => {
   const [ref, inView] = useInView({ threshold: 0 });
-  
+
   return (
     <>
       <div className="flex justify-center space-y-24 p-6 pb-16 pt-[20rem] md:pt-[27.5rem]">

@@ -39,7 +39,7 @@ const Carousel = () => {
           },
         }}
         extensions={{ AutoScroll }}
-        className="text-[#2C3542]"
+        className="text-[#0D151E]"
       >
         <SplideSlide>
           <IconBrandAdobe className="h-44 w-44" />

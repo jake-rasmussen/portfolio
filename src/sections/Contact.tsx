@@ -56,7 +56,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-white py-6 text-[#2C3542]">
+    <section className="bg-white py-6 text-[#0D151E]">
       <Toaster />
       <div className="mx-auto grid max-w-6xl grid-cols-1 px-6 md:grid-cols-2 md:divide-x lg:px-8">
         <div className="py-6 md:px-6 md:py-0">

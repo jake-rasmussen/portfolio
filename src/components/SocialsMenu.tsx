@@ -3,7 +3,7 @@ import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 const SocialsMenu = () => {
   return (
     <ul className="rounded-box invisible fixed left-0 top-[25%] z-0 m-4 items-center bg-white px-2 py-8 shadow-xl xl:visible">
-      <li className="w-full pt-2 text-center font-semibold text-[#2C3542]">
+      <li className="w-full pt-2 text-center font-semibold text-[#0D151E]">
         My Socials
       </li>
       <li>
