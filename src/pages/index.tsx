@@ -65,7 +65,6 @@ const Home: NextPage = () => {
       <SocialsMenu />
 
       <Footer />
-      
     </main>
   );
 };

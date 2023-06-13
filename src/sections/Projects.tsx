@@ -20,9 +20,9 @@ import Splitit3 from "../../assets/images/Chat.png";
 import Delineo from "../../assets/images/Delineo.png";
 
 const Projects = () => {
-  const [ref1, inView1] = useInView({ threshold: 0.45 });
-  const [ref2, inView2] = useInView({ threshold: 0.45 });
-  const [ref3, inView3] = useInView({ threshold: 0.45 });
+  const [ref1, inView1] = useInView({ threshold: 0.35 });
+  const [ref2, inView2] = useInView({ threshold: 0.35 });
+  const [ref3, inView3] = useInView({ threshold: 0.35 });
 
   return (
     <section className="overflow-x-hidden text-white">
@@ -32,7 +32,8 @@ const Projects = () => {
             My Projects
           </h1>
           <p className="mx-auto mt-4 text-center text-2xl">
-            I love to code, and have taken on a wide range of <span className="whitespace-nowrap">projects over the years.</span>
+            I love to code, and have taken on a wide range of{" "}
+            <span className="whitespace-nowrap">projects over the years.</span>
           </p>
         </div>
 
@@ -80,8 +81,9 @@ const Projects = () => {
                       Comfortability with NextJS
                     </h4>
                     <p className="mt-2">
-                      Our website is built upon NextJS to increase the site&apos;s
-                      SEO, and help better the website&apos;s efficiency as a whole
+                      Our website is built upon NextJS to increase the
+                      site&apos;s SEO, and help better the website&apos;s
+                      efficiency as a whole
                     </p>
                   </div>
                 </div>
@@ -142,8 +144,8 @@ const Projects = () => {
                       Gained Proficiency with Swift and Xcode
                     </h4>
                     <p className="mt-2">
-                      Throughout the project, I&apos;ve solidifed my Swift skills,
-                      and gained comfortability working in the Xcode IDE
+                      Throughout the project, I&apos;ve solidifed my Swift
+                      skills, and gained comfortability working in the Xcode IDE
                     </p>
                   </div>
                 </div>
