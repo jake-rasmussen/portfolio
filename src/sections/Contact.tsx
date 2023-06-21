@@ -21,7 +21,7 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const email = api.nodemailer.sendEmail.useMutation({
+  const email = api.sparkpostRouter.sendEmail.useMutation({
     onMutate() {
       toast.loading("Sending Form...");
       setLoading(true);

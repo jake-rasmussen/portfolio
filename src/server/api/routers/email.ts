@@ -1,9 +1,9 @@
 import { z } from "zod";
 import { createTRPCRouter, publicProcedure } from "../trpc";
 import { TRPCError } from "@trpc/server";
-import { emailForm } from "~/utils/nodemailer";
+import { emailForm } from "~/utils/sparkpost";
 
-export const nodemailerRouter = createTRPCRouter({
+export const sparkpostRouter = createTRPCRouter({
   sendEmail: publicProcedure
     .input(
       z.object({
@@ -25,7 +25,7 @@ export const nodemailerRouter = createTRPCRouter({
           await emailForm(name, email, message);
         } catch (e) {
           throw new TRPCError({
-            message: "INTERNAL_SERVER_ERROR",
+            message: e as string,
             code: "INTERNAL_SERVER_ERROR",
           });
         }
