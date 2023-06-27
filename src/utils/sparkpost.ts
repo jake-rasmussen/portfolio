@@ -10,14 +10,16 @@ export const emailForm = async (
   await client.transmissions.send({
     content: {
       from: {
-        name,
-        email
+        name: "Portfolio Website",
+        email: "jake@info.jakerasmussen.dev"
       },
       subject: `Email sent from ${name}`,
       html: `
       <div>
         ${message}
 
+        <br />
+        <br />
         Sender's Email: ${email}
       </div>
     `

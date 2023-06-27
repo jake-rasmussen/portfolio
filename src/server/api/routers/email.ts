@@ -30,5 +30,6 @@ export const sparkpostRouter = createTRPCRouter({
           });
         }
       }
+      return { success: true };
     }),
 });
