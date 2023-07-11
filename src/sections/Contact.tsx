@@ -69,7 +69,7 @@ const Contact = () => {
           <div className="space-y-4">
             <p className="flex items-center">
               <IconMapPin className="mr-2 h-5 w-5 sm:mr-6" />
-              <span>Philadelpia, Pennsylvania</span>
+              <span>Philadelphia, Pennsylvania</span>
             </p>
             <p className="flex items-center">
               <IconPhone className="mr-2 h-5 w-5 sm:mr-6" />

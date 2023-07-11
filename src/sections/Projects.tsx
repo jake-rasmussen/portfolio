@@ -18,6 +18,7 @@ import Splitit1 from "../../assets/images/Create Event.png";
 import Splitit2 from "../../assets/images/Join Rideshare.png";
 import Splitit3 from "../../assets/images/Chat.png";
 import Delineo from "../../assets/images/Delineo.png";
+import Link from "next/link";
 
 const Projects = () => {
   const [ref1, inView1] = useInView({ threshold: 0.35 });
@@ -49,7 +50,7 @@ const Projects = () => {
                 Whiz Kids Baseball
               </h3>
               <p className="mt-3 text-xl">
-                I am currently working with a partner to develop a website for a
+                Worked with a partner to develop a website for a
                 travel baseball organization based out of Philadelphia.
               </p>
               <div className="mt-12 space-y-12">
@@ -64,7 +65,7 @@ const Projects = () => {
                       TailwindCSS with React and Typescript
                     </h4>
                     <p className="mt-2">
-                      I&apos;ve gained proficiency with using a combination of
+                      Gained proficiency with using a combination of
                       TailwindCSS with React and Typescript to create stylized
                       components and pages
                     </p>
@@ -98,7 +99,7 @@ const Projects = () => {
                       Managing Databases with tRPC
                     </h4>
                     <p className="mt-2">
-                      Throughout the project, I&apos;ve gained experience with
+                      Throughout the project, gained experience with
                       managing a PostGres database by using tRPC to build out
                       the API
                     </p>
@@ -107,11 +108,14 @@ const Projects = () => {
               </div>
             </div>
             <div aria-hidden="true" className="mt-10 lg:mt-0">
-              <Image
-                src={WhizKidsPage}
-                alt={""}
-                className="mx-auto rounded-lg border-2 shadow-2xl"
-              />
+              <Link href="https://phillywhizkids.com" passHref={true} target="_blank">
+                <Image
+                  src={WhizKidsPage}
+                  alt={""}
+                  className="mx-auto rounded-lg border-2 shadow-2xl"
+                />
+              </Link>
+
             </div>
           </div>
         </motion.div>
@@ -185,23 +189,25 @@ const Projects = () => {
               </div>
             </div>
             <div className="mt-10 lg:col-start-1 lg:row-start-1 lg:mt-0">
-              <div className="grid grid-cols-3 gap-2">
-                <Image
-                  src={Splitit1}
-                  alt={""}
-                  className="mx-auto rounded-lg border-2 shadow-2xl"
-                />
-                <Image
-                  src={Splitit2}
-                  alt={""}
-                  className="mx-auto rounded-lg border-2 shadow-2xl"
-                />
-                <Image
-                  src={Splitit3}
-                  alt={""}
-                  className="mx-auto rounded-lg border-2 shadow-2xl"
-                />
-              </div>
+              <Link href="https://www.trysplit.it/" passHref={true} target="_blank">
+                <div className="grid grid-cols-3 gap-2">
+                  <Image
+                    src={Splitit1}
+                    alt={""}
+                    className="mx-auto rounded-lg border-2 shadow-2xl"
+                  />
+                  <Image
+                    src={Splitit2}
+                    alt={""}
+                    className="mx-auto rounded-lg border-2 shadow-2xl"
+                  />
+                  <Image
+                    src={Splitit3}
+                    alt={""}
+                    className="mx-auto rounded-lg border-2 shadow-2xl"
+                  />
+                </div>
+              </Link>
             </div>
           </div>
         </motion.div>
@@ -218,7 +224,7 @@ const Projects = () => {
                 The Delineo Project
               </h3>
               <p className="mt-3 text-xl">
-                I worked on a Johns Hopkins research project tasked with
+                Worked on a Johns Hopkins research project tasked with
                 simulating infectious diseases and various mandates to try to
                 reduce transmission.
               </p>
@@ -234,7 +240,7 @@ const Projects = () => {
                       Unity Game Engine
                     </h4>
                     <p className="mt-2">
-                      I developed an AI to simulate the spread of infectious
+                      Developed an AI to simulate the spread of infectious
                       disease, numerous UI changes to enhance user experience,
                       and modeled the enviornment
                     </p>
@@ -251,7 +257,7 @@ const Projects = () => {
                       Experience with Blender
                     </h4>
                     <p className="mt-2">
-                      I created new models, targeted towards making the
+                      Created new models, targeted towards making the
                       simulation run more smoothly while creating an interesting
                       atmosphere for the user
                     </p>
@@ -277,11 +283,13 @@ const Projects = () => {
               </div>
             </div>
             <div aria-hidden="true" className="mt-10 lg:mt-0">
-              <Image
-                src={Delineo}
-                alt={""}
-                className="mx-auto rounded-lg border-2 shadow-2xl"
-              />
+              <Link href="https://covidweb.isi.jhu.edu/simulator" passHref={true} target="_blank">
+                <Image
+                  src={Delineo}
+                  alt={""}
+                  className="mx-auto rounded-lg border-2 shadow-2xl"
+                />
+              </Link>
             </div>
           </div>
         </motion.div>
