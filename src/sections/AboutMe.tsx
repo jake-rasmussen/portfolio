@@ -58,7 +58,7 @@ const AboutMe = () => {
                 These days, I contribute to a lot of different projects, both
                 through school and freelance work. This past summer I also interned
                 at eBay, working as a Fullstack Engineer on the Listings team. Currently,
-                I'm working on my startup in an accelerator program with the Pava Center for 
+                I&apos;m working on my startup in an accelerator program with the Pava Center for 
                 Entrepreneurship at Johns Hopkins. I&apos;m always eager to
                 become more involved, so if you&apos;re ever interested in a
                 project please feel free to reach out to me via the contact

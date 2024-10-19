@@ -9,7 +9,6 @@ import {
   IconBrandBlender,
   IconUsers,
   IconBusinessplan,
-  IconChartBubble,
   IconMicrophone2,
   IconCode,
 } from "@tabler/icons-react";
