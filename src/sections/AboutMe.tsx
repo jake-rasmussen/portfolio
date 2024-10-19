@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Headshot from "../../assets/images/Headshot.png";
 import Image from "next/image";
 
 const AboutMe = () => {
@@ -18,15 +17,16 @@ const AboutMe = () => {
             <span className="whitespace-nowrap">portfolio site!</span>
           </p>
           <div className="flex flex-col items-center md:flex-row">
-            <div className="avatar my-4 mr-6 xl:my-0">
-              <div className="h-[20rem] w-[20rem] rounded-3xl shadow-xl md:h-[25rem] md:w-[15rem] lg:w-[25rem]">
+            <div className="relative my-4 mr-6 xl:my-0">
+              <div className="relative h-[20rem] w-[20rem] rounded-3xl shadow-xl md:h-[25rem] md:w-[15rem] lg:w-[25rem] overflow-hidden">
                 <Image
-                  src={Headshot}
+                  src={"/Headshot.png"}
                   alt={""}
-                  className="h-full rounded-xl object-cover shadow-2xl"
+                  fill
+                  className="rounded-xl object-cover shadow-2xl"
                 />
               </div>
-              <div className="absolute h-[20rem] w-[20rem] animate-pulse rounded-3xl shadow-xl ring ring-[#FFA559] ring-offset-4 ring-offset-base-100 md:h-[25rem] md:w-[15rem] lg:w-[25rem]" />
+              <div className="absolute top-0 h-[20rem] w-[20rem] animate-pulse rounded-3xl shadow-xl ring ring-[#FFA559] ring-offset-4 ring-offset-base-100 md:h-[25rem] md:w-[15rem] lg:w-[25rem]" />
             </div>
             <motion.div
               ref={ref}
@@ -49,14 +49,17 @@ const AboutMe = () => {
                 University. From a very young age, I&apos;ve always had a
                 fascination with technology. I loved playing around with the
                 Raspberry Pi, and I found a passion for coding through exploring
-                Game Development with the Unity Game Engine. It didn&apos;t take
+                game development with the Unity Game Engine. It didn&apos;t take
                 me long to realize that I wanted to pursue Computer Science in
                 the future, and I&apos;ve always kept myself busy with
                 multifaceted projects.
                 <br />
                 <br />
                 These days, I contribute to a lot of different projects, both
-                through school and freelance work. I&apos;m always eager to
+                through school and freelance work. This past summer I also interned
+                at eBay, working as a Fullstack Engineer on the Listings team. Currently,
+                I'm working on my startup in an accelerator program with the Pava Center for 
+                Entrepreneurship at Johns Hopkins. I&apos;m always eager to
                 become more involved, so if you&apos;re ever interested in a
                 project please feel free to reach out to me via the contact
                 form. Thank you again for checking out my website!

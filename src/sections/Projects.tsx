@@ -8,12 +8,17 @@ import {
   IconBrandUnity,
   IconBrandBlender,
   IconUsers,
+  IconBusinessplan,
+  IconChartBubble,
+  IconMicrophone2,
+  IconCode,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
 import WhizKidsPage from "../../assets/images/WK_Homepage.png";
+import CampusConnect from "../../assets/images/CampusConnect.png";
 import Splitit1 from "../../assets/images/Create Event.png";
 import Splitit2 from "../../assets/images/Join Rideshare.png";
 import Splitit3 from "../../assets/images/Chat.png";
@@ -21,6 +26,7 @@ import Delineo from "../../assets/images/Delineo.png";
 import Link from "next/link";
 
 const Projects = () => {
+  const [ref0, inView0] = useInView({ threshold: 0.35 });
   const [ref1, inView1] = useInView({ threshold: 0.35 });
   const [ref2, inView2] = useInView({ threshold: 0.35 });
   const [ref3, inView3] = useInView({ threshold: 0.35 });
@@ -37,6 +43,84 @@ const Projects = () => {
             <span className="whitespace-nowrap">projects over the years.</span>
           </p>
         </div>
+
+        <motion.div
+          ref={ref0}
+          viewport={{ once: true }}
+          transition={{ duration: 1.0 }}
+          animate={inView0 ? { opacity: 1, x: 0 } : { opacity: 0, x: "5rem" }}
+        >
+          <div className="grid lg:grid-cols-2 lg:items-center lg:gap-8">
+            <div className="lg:col-start-2">
+              <h3 className="text-2xl font-bold tracking-tight sm:text-5xl">
+                Campus Connect
+              </h3>
+              <p className="mt-3 text-xl">
+                Advancing my startup idea to enhance the student led startup ecosystem
+                by connecting students across universities.
+              </p>
+              <div className="mt-12 space-y-12">
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <div className="flex h-12 w-12 items-center justify-center">
+                      <IconBusinessplan className="h-full w-full text-[#FF6000]" />
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-xl font-bold leading-6">
+                      Gaining Business Side Experience
+                    </h4>
+                    <p className="mt-2">
+                      Through the accelerator, I&apos;ve gained significant development
+                      and understanding of how to get a startup off the ground
+                    </p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <div className="flex h-12 w-12 items-center justify-center">
+                      <IconMicrophone2 className="h-full w-full text-[#FF6000]" />
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-xl font-bold leading-6">
+                      Practice Pitching to Venture Capitalists
+                    </h4>
+                    <p className="mt-2">
+                      Gained significant practice with pitching to VC&apos;s, and preparing
+                      for a final pitch with hundreds of judges and investors present
+                    </p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <div className="flex h-12 w-12 items-center justify-center">
+                      <IconCode className="h-full w-full text-[#FF6000]" />
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <h4 className="text-xl font-bold leading-6">
+                      Advacement of Technical Skillset
+                    </h4>
+                    <p className="mt-2">
+                      Continuing to gain experience building end-to-end apps. Using T3 Stack, which
+                      has been my go-to for development for years
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-10 lg:col-start-1 lg:row-start-1 lg:mt-0">
+              <div aria-hidden="true" className="mt-10 lg:mt-0">
+                <Image
+                  src={CampusConnect}
+                  alt={""}
+                  className="mx-auto rounded-lg border-2 shadow-2xl"
+                />
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         <motion.div
           ref={ref1}
@@ -108,14 +192,11 @@ const Projects = () => {
               </div>
             </div>
             <div aria-hidden="true" className="mt-10 lg:mt-0">
-              <Link href="https://phillywhizkids.com" passHref={true} target="_blank">
-                <Image
-                  src={WhizKidsPage}
-                  alt={""}
-                  className="mx-auto rounded-lg border-2 shadow-2xl"
-                />
-              </Link>
-
+              <Image
+                src={WhizKidsPage}
+                alt={""}
+                className="mx-auto rounded-lg border-2 shadow-2xl"
+              />
             </div>
           </div>
         </motion.div>
